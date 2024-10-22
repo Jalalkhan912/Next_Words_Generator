@@ -27,7 +27,7 @@ corpus = pd.read_csv('corpus.csv')
 st.write(corpus[:10],)
 
 # streamlit app
-st.title("Next Words Prediction with Bi-Directional LSTM")
+st.title("Shakespeare Sonnets Text Generation with Bi-LSTM")
 input_text = st.text_input("Enter the starting 3-4 Words from above Phrases or Enter your own words")
 next_words = st.number_input("Enter the number of Words to predict",min_value=1, value=3, step=1)
 if st.button("Predict Next Words"):
